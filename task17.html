@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>filter property in html</title>
+   <style>
+
+      /* values for filter property in html  */
+      /* blur(px), brightness(%)	, contrast(%), drop-shadow(h-shadow v-shadow blur spread color), grayscale(%), hue-rotate(deg), invert(%), opacity(%), saturate(%), sepia(%), */
+
+
+      /* description for every values  ====>  */
+      /* blur(px) - Applies a blur effect to the image. A larger value will create more blur. If no value is specified, 0 is used.
+
+      brightness(%) - Adjusts the brightness of the image. 0% will make the image completely black. 10 (1) is default and represents the original image. Values over 100% will provide brighter results.
+
+      contrast(%) - Adjusts the contrast of the image. 0% will make the image completely black. 100% (1)is default, and represents the original image. Values over 100% will provide results with more contrast.
+
+      drop-shadow(h-shadow v-shadow blur spread color) - horizontal, vertical and blur shadow and color. There is one optional that spread that is fourth value in property 
+
+      grayscale(%) - Converts the image to grayscale. 0% (0) is default and represents the original image. 100% will make the image completely gray (used for black and white images).
+
+      hue-rotate(deg) - Applies a hue rotation on the image. The value defines the number of degrees around the color circle the image samples will be adjusted. 0deg is default, and represents the original image.
+
+      invert(%) - Inverts the samples in the image. 0% (0) is default and represents the original image. 100% will make the image completely inverted.
+
+      opacity(%) - Sets the opacity level for the image. The opacity-level describes the transparency-level, where: 0% is completely transparent. 100% (1) is default and represents the original image (no transparency).
+
+      saturate(%) - Saturates the image. 0% (0) will make the image completely un-saturated. 100% is default and represents the original image. Values over 100% provides super-saturated results.
+
+      sepia(%) - Converts the image to sepia. 0% (0) is default and represents the original image. 100% will make the image completely sepia. */
+   
+      #image #first {
+         width: 500px;
+         height: 300px;
+         filter: blur(2px);
+      }
+      #image #first:hover {
+         filter: blur(0px);
+      }
+      #image #second {
+         filter: drop-shadow(10px 10px 2px grey);
+      }
+   </style>
+</head>
+<body>
+
+   <!-- filter property in html  -->
+
+   <div id="image">
+      <img src="codeck.jpg" alt="image not found" id="first">
+
+      <!-- i want to give shadow to image not outside of html image but to that outline shadow -->
+      <!-- so to apply shadow like that you need image in png format  -->
+      <img src="html.png" alt="image not found" id="second">
+   </div>
+</body>
+</html>

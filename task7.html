@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>float property in html</title>
+   <style>
+      .parent {
+         border: 2px solid red;
+      }
+      #child3 {
+         border: 2px solid yellowgreen;
+
+         /* if i increase the data of right it will again overwrite on the child3 div */
+         /* there are three values right, left ,both  */
+         /* clear: right; */
+
+         
+         /* now you can see data is going down one by one but what if i increase the data of left it will again overwrite on the child3 div,  */
+         /* clear: left; */
+         /* but we dont know when left side data will increase or right side of data will increase then use clear:both;  */
+
+         
+         /* there is problem with, so use clear:both; so it can't overwrite on child3 whether content of left increase or content of right increase */
+         clear: both;
+
+
+      }
+      #child1 {
+         width: 300px;
+         background-color: lightpink;
+         padding: 10px;
+         /* this will at left side  */
+         float: left;
+      }
+      #child2 {
+         width: 300px;
+         background-color: lightblue;
+         padding: 10px;
+         /* this will at right side  */
+         /* but there is problem if i add one more div then it will hide back to two divs  */
+         float: right;
+      }
+   </style>
+</head>
+<body>
+   <!-- sometime we need to add two div which is block level elements next to each that time we can use float property in webpage -->
+   
+   <!-- but there is problem that next div will hide back to that two divs and to make it at next line use clear property  -->
+   <!-- lets see  -->
+   <div class="parent">
+      <div id="child1">
+         <h1>First block</h1>
+         
+      </div>
+      <div id="child2">
+         <h1>Second block</h1>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste suscipit natus laborum dolorum at aut repellendus culpa vero. Molestias, quibusdam temporibus. Velit dolor dolores quas fuga laborum magni rerum molestias deleniti corporis totam est obcaecati accusantium autem nobis ab enim voluptas nihil eum, eaque assumenda tempora aliquid quibusdam? Ex soluta repellendus id excepturi. Doloremque nobis illum praesentium eveniet dolore laboriosam architecto iusto vel eligendi! Reprehenderit esse laborum omnis, suscipit accusantium ea, perferendis asperiores autem dolores optio pariatur distinctio! Quidem vel in vitae molestiae omnis laboriosam, atque nihil numquam, deleniti nemo repellendus minus pariatur explicabo fugiat repudiandae aperiam quasi adipisci officiis.
+         <!-- i removed the data of child2 and there more data in child1 so see the output -->
+          <!-- again that child3 is hiding so use clear : left -->
+      </div>
+      <!-- i added one more div here inside the parent  -->
+      <div id="child3">
+         <h1>Second block</h1>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam illo illum unde saepe nisi, voluptatibus minima expedita cum porro ad ea tenetur alias delectus architecto ipsum aut eaque fugiat quidem.
+      </div>
+
+      <!-- so clear this problem use clear property / -->
+   </div>
+
+
+   <!-- ok that's how clear property works ...  -->
+</body>
+</html>

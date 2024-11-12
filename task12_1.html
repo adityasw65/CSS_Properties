@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>gradient color in html</title>
+   <style>
+      body {
+         display: flex;
+         flex-wrap: wrap;
+         column-gap: 10px;
+      }
+      #card1 {
+         width: 300px;
+         height: 300px;
+         /* this gradient color show color in circular format  */
+         background: radial-gradient(lightcoral, lightblue, lightgreen);
+      }
+      #card2 {
+         width: 300px;
+         height: 300px;
+         /* this gradient color show color in clockwise direction format  */
+         background: conic-gradient(orange, lightblue, lightgreen);
+      }
+   </style>
+</head>
+<body>
+
+   <!-- extra two values for gradient property  -->
+
+   <div id="card1">
+      <h1>Radial Gradient</h1>
+   </div>
+   <div id="card2">
+      <h1>Conic Gradient</h1>
+   </div>
+</body>
+</html>

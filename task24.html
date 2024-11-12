@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>property are letter-spacing, user-select, word-spacing and quotes in html</title>
+   <style>
+      h1 {
+         /* here you are giving the space between letters not words  */
+         letter-spacing: 2px;
+      }
+      #box {
+         width: 300px;
+         height: 200px;
+         border: 2px solid black;
+
+         /* 
+         all - in one click all paragraph will select 
+         none - no one can select that text 
+         auto - default         
+         */
+         user-select: all;
+
+         /* here you are giving the space between words not letters  */
+         word-spacing: 10px;
+         margin-bottom: 30px;
+      }
+      q {
+         /* here you can give starting and ending of quotes in html  */
+         quotes: "<<" ">>";
+      }
+   </style>
+</head>
+<body>
+   <h1>India is my Country...</h1>
+   <div id="box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam placeat rem veniam exercitationem dolores architecto molestias repudiandae dolore delectus eaque. Beatae unde sint nemo assumenda explicabo fuga in commodi, qui dignissimos magni esse ad, autem obcaecati, voluptates doloremque numquam dolorem.
+   </div>
+   
+   <q>
+      The man become great by his deeds <i>by unknown person</i>
+   </q>
+</body>
+</html>

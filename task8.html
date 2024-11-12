@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>display properties</title>
+   <style>
+      * {
+         box-sizing: border-box;
+         margin: 0;
+         padding: 0;
+      }
+      .card1 {
+         /* this inline property is used to make block level tags in inline level tags  */
+         display: inline;
+         background-color: lightblue;
+      }
+      .card2 {
+         display: inline;
+         background-color: lightcoral;
+      }
+      .card3 {
+         display: inline;
+         background-color: aquamarine;
+      }
+      .card4 {
+         display: inline;
+         background-color: lightgray;
+      }
+      h2 {
+         margin-top: 10px; 
+      }
+      span {
+         /* so this inline-level tag, now we want to convert inline to block level tag then use and this tag take entire width of screen */
+         display: block;
+         background-color: navy;
+         color: yellow;
+         
+      }
+      .menu span {
+         /* this property used on inline elements and to make block element in one line  */
+         display: inline-block;
+         background-color: lightsalmon;
+         color: navy;
+      }
+      .sample div {
+         /* this property used to make block elements as list and list has style that is disc, circles etc they outside the block that's why it will not show us so use list-style:inside it can show us styles inside the block  */
+         display: list-item;
+         background-color: lightgoldenrodyellow;
+         color: navy;
+         list-style: inside;
+      }
+   </style>
+</head>
+<body>
+
+   <!-- display properties  -->
+
+   <h2>display:inline</h2>
+   <div class="cards">
+      <div class="card1">
+         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio incidunt quo ratione vitae voluptate recusandae libero mollitia maxime magni obcaecati?
+      </div>
+      <div class="card2">
+         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias assumenda nesciunt cum, culpa hic labore nemo quae odit ab nisi.
+      </div>
+      <div class="card3">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio officia voluptatibus, numquam explicabo recusandae nostrum placeat adipisci cupiditate distinctio?
+      </div>
+      <div class="card4">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quasi impedit magni perferendis tempora repellendus optio sed laboriosam. Soluta, quis.
+      </div>
+
+      <h2>display:block</h2>
+      <span>Aditya Waghmare</span>
+
+      <h2>display:inline-block</h2>
+      <div class="menu">
+         <span>home</span>
+         <span>contact</span>
+         <span>about</span>
+      </div>
+
+      <h2>display:list-item</h2>
+      <div class="sample">
+         <div>HOME</div>
+         <div>ABOUT</div>
+      </div>
+   </div>
+</body>
+</html>

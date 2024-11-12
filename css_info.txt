@@ -1,0 +1,27 @@
+Basic Information about CSS :- 
+1. CSS stands for Cascading Style Sheets
+
+2. CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+
+3. CSS saves a lot of work. It can control the layout of multiple web pages all at once
+
+4. External stylesheets are stored in CSS files
+
+5. latest version of CSS is CSS3
+
+6. Difference between CSS and CSS3
+	6.1. CSS3: It is an upgraded version of CSS (cascading style sheets) technology, which was launched in 1999.
+       The formulation began in 2001, and W3C completed the working draft of CSS3 on May 23, 2001.
+       
+       CSS: It is a computer language used to express document styles such as HTML (an application of Standard 		Generalized Markup Language) or XML (a subset of Standard Generalized Markup Language).
+	
+	6.2. CSS3: mainly includes modules such as box model, list module, hyperlink method, language module,
+       background and border, text effects, multi-column layout, etc.
+      
+       CSS: It can not only statically modify web pages, but also dynamically format various elements of web pages in conjunction with various scripting languages.
+   
+  6.3. CSS3: There are many new features, such as rounded corners, graphical borders, block shadows and text
+       shadows, using RGBA to achieve transparency effects, gradient effects, and using @Font -Face implements customized fonts, multiple background images, text or image deformation processing (rotation, scaling, tilting, movement), multi-column layout, media queries, etc.
+        
+       CSS: It can perform pixel-level precise control of the layout of element positions in web pages, supports almost all font sizes and styles, and has the ability to edit web page objects and model styles.
+

@@ -1,0 +1,20 @@
+
+Basic Information about HTML :- 
+
+1. HTML is the standard language used for web development. There are many web development tools that you can use when you are working with HTML. It allows you to create the base structure of a webpage using small tags called markup tags.
+
+2. The latest version of HTML is HTML5
+
+3. HTML5 is not a separate system, but rather the latest version of HTML technology. Its predecessor, HTML4, had its first and last update in December 1999. HTML5 is actually not very new itself, being released several years ago in 2014.
+
+3. then what is the difference between HTML and HTML5
+	
+	3.1. HTML is lengthy and complex but HTML5 is simplified <!DOCTYPE html>
+		
+	3.2. HTML requires plugins like adobe flash but HTML5 is Native support with <svg>
+
+	3.3. HTML requires external plugins for audio and video but HTML5 have already tags for it <audio> and <video> 
+
+	3.4. Limited semantic tag in HTML but Rich semantic tags in HTML5 (<section>, <header>, <footer> etc..)
+	
+	3.5. Basic controls in HTML but New form controls like calendar, date, time, color picker in HTML5

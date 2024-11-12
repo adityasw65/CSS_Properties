@@ -1,0 +1,12 @@
+/* you can use . for className, # for id and direct name for tags  */
+/* so to apply css to classname use .  */
+.menu {
+   background-color: lightgray;
+   padding: 10px;
+}
+.menu ul li {
+   list-style: none;
+}
+
+
+

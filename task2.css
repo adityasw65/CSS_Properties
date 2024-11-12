@@ -1,0 +1,36 @@
+/* 2.combinator selector  */
+/* 2.1. descendant selector  */
+/* inside the class card1 p tag  */
+.card1 p {
+   background-color: rgb(234, 144, 144);
+   padding: 5px;
+}
+
+/* 2.2 direct child selector - all h1 tags */
+.card1 > h1 {
+   color: black;
+   text-shadow: 3px 3px 8px grey;
+   font-size: 4rem;
+}
+
+
+/* 2.3. adjacent sibling selector  */
+/* only css apply for adjacent div  */
+.card1 + .card2 {
+   background-color: yellow;
+   padding: 4px;
+}
+
+/* 2.4. general sibling selector */
+/* apply css for siblings  */
+div ~ ul {
+   background-color: lightblue;
+}
+div ~ ul li {
+   list-style: none;
+}
+
+
+
+
+

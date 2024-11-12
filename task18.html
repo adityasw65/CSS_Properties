@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>transition property in html</title>
+   <style>
+      #card {
+         width: 100px;
+         height: 100px;
+         background-color: lightcoral;
+
+         /* for all properties when hover  */
+         /* transition-property: width; */
+         transition-property: all;
+
+         /* this duration for work in given time  */
+         transition-duration: 1s;
+
+         /* this delay for work start after given time  */
+         transition-delay: 0s;
+         
+         /* work start timing that same time during start and end that is linear  */
+         transition-timing-function: linear;
+
+         /* values for transition-tming-function are ==>
+               linear - for same time for start and end point during work
+               ease - slow for start then fast and then slow
+               ease-in - slow start
+               ease-out - slow end 
+               ease-in-out - slow start and slow end
+               steps(int,start|end) - value for steps that step by step it will work 
+               cubic-bezier(n,n,n,n) - value for steps that step by step it will work
+         */
+      }
+      #card:hover {
+         width: 500px;
+         background-color: blue;
+      }
+
+      /* shorthand for transition property is :
+      transition: property_name duration delay timing_function  */
+   </style>
+</head>
+<body>
+
+   <!-- transition property used for smoothness in website  -->
+
+   <div id="card">
+
+   </div>
+</body>
+</html>

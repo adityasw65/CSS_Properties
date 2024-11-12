@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>display flex</title>
+   <style>
+      .parent {
+         border: 2px solid black;
+         height: 500px;
+         display: flex;
+         flex-direction: column;
+
+         /* vertical alignments  */
+         /* this apply on column direction  */
+         /* this propery apply on each div */
+         /* align-items: [flex-start/ flex-end/ center/ stretch(default)/ baseline]; */
+         align-items: center;
+
+         /* this property apply on entire content  */
+         /* align-content: [flex-start/ flex-end/ center/ stretch/ space-around/ space-evenly/ space-between]; */
+
+      }
+      .card1 {
+         width: 300px;
+         height: 120px;
+         background-color: lightblue;
+      }
+      .card2 {
+         width: 300px;
+         height: 120px;
+         background-color: lightgray;
+      }
+      .card3 {
+         width: 300px;
+         height: 120px;
+         background-color: lightpink;
+      }
+   </style>
+</head>
+<body>
+   <div class="parent">
+      <div class="card1">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, recusandae omnis reprehenderit natus, error magni ratione aspernatur facilis reiciendis nostrum id officiis ad. Enim, ab incidunt at id minima fugit.
+      </div>
+      <div class="card2">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo possimus repellat officia impedit eius, exercitationem totam? Atque praesentium dolore iusto odit deleniti, eligendi est odio. Officia excepturi facere dolore nihil?
+      </div>
+      <div class="card3">
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem nesciunt, molestiae adipisci enim fugiat similique, a soluta in ex veritatis consequuntur iusto saepe quisquam perspiciatis totam dolorum natus sunt itaque!
+      </div>
+   </div>
+</body>
+</html>

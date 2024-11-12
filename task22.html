@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>animation in html</title>
+   <style>
+      #card1 {
+         width: 400px;
+         height: 200px;
+         border: 2px solid black;
+
+         /* animation syntax  */
+         /* animation-name: colorChange;
+         animation-duration: 3s;
+         animation-timing-function: linear;
+         animation-delay: 0s;. */
+         /* you can give 1,2,3,... infinite  */
+         /* animation-iteration-count: infinite; */
+         /* alternate, reverse, alternate-reverse  */
+         /* animation-direction: alternate;  */
+         /* forwards, backwards  */
+         /* animation-fill-mode: forwards; */
+         /* running, paused    */
+         /* animation-play-state: running; */
+
+         /*
+
+         shorthand for animation property --- 
+
+         animation: [name] [duration] [timing-function] [delay] [iteration-count] [direction] [fill-mode] [play-state] 
+         
+         */
+         animation: colorChange1 1s linear 0s infinite alternate;
+      }
+
+      @keyframes colorChange1 {
+         from {
+            background: linear-gradient(lightblue, orange, yellow);
+         }
+         to {
+            background: linear-gradient(lightcoral, grey, green);
+         }
+      }
+
+
+      #card2 {
+         margin-top: 10px;
+         width: 400px;
+         height: 200px;
+         border: 2px solid black;
+         background-color: lightyellow;
+         animation: colorChange2 4s linear 0s infinite alternate;
+      }
+      @keyframes colorChange2 {
+         0% {
+            border-radius: 50% 20% 55% 22%;
+         }
+         25% {
+            border-radius: 30% 10% 85% 28%;
+         }
+         50% {
+            border-radius: 51% 60% 25% 29%;
+         }
+         75% {
+            border-radius: 54% 50% 15% 94%;
+         }
+         100% {
+            border-radius: 51% 94% 52% 3%;
+         }
+      }
+
+   </style>
+</head>
+<body>
+
+   <!-- we are seeing animation property in css  -->
+
+   <div id="card1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem, a modi animi nobis asperiores obcaecati officiis delectus earum, doloribus necessitatibus magnam illum consequuntur deserunt nihil quo praesentium molestiae, eveniet doloremque quidem sit. Accusantium, magni aut laudantium possimus nemo consequatur.
+   </div>
+
+   <div id="card2">
+   </div>
+</body>
+</html>

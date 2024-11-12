@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>position property in html</title>
+   <style>
+      .card1 {
+         width: 200px;
+         height: 220px;
+         border: 2px solid black;
+         background: lightblue;
+
+         /* position: [static(default)/relative/absolute/fixed/sticky]; */
+
+         /* this property - the card start from that same co-ordinates it move left right bottom left  */
+         position: relative;
+         top: 10px;
+         left: 100px;
+
+         /* you can take card1 over the card2  */
+         /* there is one property that is z-index  */
+         /* the more z-index value the card top on all other cards  */
+         z-index: 1;
+      }
+      .card2 {
+         width: 200px;
+         height: 220px;
+         border: 2px solid black;
+         background: lightyellow;
+
+         /* position: [static(default)/relative/absolute/fixed/sticky]; */
+
+         /* this property - the card start (0,0) co-ordinates of screen from left top and it move left right bottom left  */
+         /* because of this property it over on card1  */
+         position: absolute;
+         top: 10px;
+         left: 220px;
+      }
+      .card3 {
+         width: 200px;
+         height: 220px;
+         border: 2px solid black;
+         background: lightgrey;
+
+         /* position: [static(default)/relative/absolute/fixed/sticky]; */
+
+         /* this property - this property make card fixed in entire webpage, 
+         --- this property used for navigation bar */
+         position: fixed;
+         top: 10px;
+         right: 0;
+      }
+      .card4 {
+         width: 200px;
+         height: 220px;
+         border: 2px solid black;
+         background: lightpink;
+
+         /* position: [static(default)/relative/absolute/fixed/sticky]; */
+
+         /* this property - works when cards meet where from that point it stick to webpage and when you scroll down it will stick until end of webpage, and when you scroll up then where card meet point that left then card will not show us */
+         position: sticky;
+         top: 10px;
+         left: 100px;
+      }
+   </style>
+</head>
+
+<body>
+   <!-- static
+   relative
+   fixed
+   absolute
+   sticky -->
+
+   <div class="card1">
+      <p>position : relative</p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, numquam similique error molestiae officia alias dolorem facilis quae cum deserunt animi dolores inventore consectetur suscipit voluptate non harum enim. Cumque.
+   </div>
+
+   <div class="card2">
+      <p>position : absolute</p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, numquam similique error molestiae officia alias dolorem facilis quae cum deserunt animi dolores inventore consectetur suscipit voluptate non harum enim. Cumque.
+   </div>
+
+   <div class="card3">
+      <p>position : fixed</p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, numquam similique error molestiae officia alias dolorem facilis quae cum deserunt animi dolores inventore consectetur suscipit voluptate non harum enim. Cumque.
+   </div>
+
+   
+   <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, consequuntur. Dolor quo rem culpa dolore! Ea officiis quod nesciunt cumque, aperiam atque quo quisquam corporis quas, dicta repellat, dolorum facilis saepe deleniti impedit non delectus perspiciatis eaque? Numquam aliquam, tenetur facere reiciendis fugiat alias sunt deserunt suscipit laboriosam, et placeat magni voluptatibus esse ad soluta repellendus praesentium. Facilis quidem commodi eveniet ipsam possimus, suscipit quaerat, debitis assumenda libero natus voluptas odio autem delectus nostrum perferendis eaque. Beatae ipsa perspiciatis officiis adipisci alias quaerat illum harum doloribus reiciendis nulla obcaecati, natus consequuntur assumenda, molestiae corporis temporibus totam commodi incidunt labore veritatis voluptatum fugiat. Minus labore assumenda cum impedit quos id beatae necessitatibus veritatis dicta illum deleniti dolor saepe, veniam voluptatum fugit neque distinctio pariatur soluta. Doloribus excepturi, suscipit quo rerum adipisci rem doloremque eligendi esse eum, porro, saepe nulla quisquam impedit. Nihil voluptatibus tenetur ut adipisci dolores perspiciatis, non deserunt tempora omnis id voluptatem, a ipsa quod ex temporibus dolorem nobis optio nostrum! Accusantium saepe blanditiis similique autem. Animi quo eveniet, quas a asperiores impedit beatae provident eius ex iste qui aut neque officiis necessitatibus quasi veritatis corporis. Unde officia facere pariatur eum ratione consequatur ad magni quam et eaque mollitia maiores esse obcaecati temporibus deleniti, aliquid fugit quibusdam animi quia doloribus repudiandae repellat? Accusamus fugit animi, ducimus molestias praesentium quis possimus ad, repellendus voluptatum autem facere? Eum maxime dignissimos sunt est explicabo, ea reprehenderit hic odio incidunt quisquam tempore eveniet perspiciatis harum similique aliquam laborum assumenda. Quis laboriosam illo voluptatibus deserunt ipsum delectus iste ex, totam dolorem enim mollitia. Iste, quis! Aliquam ut eius nostrum eligendi consectetur dignissimos temporibus ullam quam adipisci autem doloremque, aliquid expedita fuga voluptates dolorem sequi esse? Aliquam reprehenderit voluptates ipsum quaerat doloribus velit nam eos quas itaque! Laboriosam dolores repudiandae voluptas quae ratione officiis minus enim beatae soluta. Minima similique placeat necessitatibus odio consequatur nemo? Facilis, minus sit, asperiores dolorum laborum veritatis excepturi placeat consequatur error et sunt perferendis ipsa est quod quia optio reiciendis, velit iure distinctio. Suscipit nostrum recusandae libero ullam incidunt aperiam ipsa itaque vitae nobis assumenda adipisci eveniet facere non commodi, repudiandae ex? Adipisci libero natus itaque aut facilis architecto consequuntur obcaecati eius inventore reiciendis est quaerat odit porro provident perferendis velit molestiae minus quod, eos et cumque voluptatem. Nostrum, distinctio adipisci necessitatibus error vel voluptates obcaecati soluta cupiditate. Laborum nostrum asperiores nesciunt? Fugiat hic aliquid amet iure eligendi? Sunt repudiandae, similique ratione cumque ipsum laudantium architecto nam sint accusantium aut eos quas amet praesentium excepturi iste ipsam neque beatae officia! Nostrum corrupti quae placeat perspiciatis maiores</p>
+      
+      <div class="card4">
+         <p>position : sticky</p>
+         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, numquam similique error molestiae officia alias dolorem facilis quae cum deserunt animi dolores inventore consectetur suscipit voluptate non harum enim. Cumque.
+      </div>
+   
+      <p>
+      officia alias dolorum sed iste quo soluta similique fuga labore, cum accusantium nisi rem totam ea temporibus eveniet aspernatur nemo possimus quas adipisci. Facere quibusdam iste deserunt adipisci sed, saepe, maxime ullam porro sequi, excepturi dicta est! Dignissimos officia earum corporis dolores? Autem sapiente eius id totam tempore veritatis, cum iure ipsa dolorum modi similique nihil neque nulla. Natus beatae eveniet, dolor dolores similique, amet, placeat rerum suscipit quam distinctio repellendus temporibus aliquid neque soluta voluptatibus officiis ipsa? Non, facere excepturi eveniet enim molestiae laborum perferendis nemo porro iusto incidunt repellat corrupti odit, sit libero? Iure dolor, qui debitis doloremque hic sed neque accusamus asperiores quam mollitia, nulla sint ducimus provident est fuga. Excepturi, itaque, non sint iusto quod, quas id aperiam sequi ad magnam veniam est harum nam! Quas nemo deleniti adipisci libero minima ullam aliquam nesciunt quasi! Eveniet numquam rem qui quas. Minus nostrum repudiandae neque tenetur, porro omnis quisquam aliquid rem laboriosam obcaecati amet nulla doloribus quam repellat itaque et unde accusantium ducimus eaque nihil, quo quaerat corporis. Autem, amet, facere sequi quam tenetur eos nobis architecto quos facilis eveniet rerum ullam, totam atque maxime temporibus natus iste vel minima inventore vitae suscipit numquam in accusantium? Unde voluptates, harum ullam nihil qui neque rerum, repellat molestias ea, doloribus dolore ipsa sint corporis alias reprehenderit! Amet accusantium totam reprehenderit laudantium voluptates! Illo, aliquam? Consequatur atque, voluptate assumenda, officiis quia incidunt temporibus recusandae, nam maiores error cum. Quia obcaecati laborum sequi voluptatibus animi voluptate corrupti vero numquam quisquam impedit doloremque, accusantium corporis quod natus recusandae, esse ex enim, maxime veritatis vitae? Nemo, ex repellendus deleniti molestias iure illum ullam quisquam deserunt? Est expedita rerum aliquam. Laudantium temporibus sequi nam! Eius magnam mollitia, doloribus facilis animi, voluptatem nihil magni beatae voluptas quis quasi earum ut, quos asperiores consectetur accusamus officiis tempore. Laudantium minima autem incidunt? Rem non dolore, dolor vitae quasi hic ea eveniet. Asperiores vitae debitis necessitatibus eveniet impedit dolore corrupti eligendi. Laboriosam iure nemo iusto beatae. Impedit in ipsa cupiditate aliquam saepe nisi quisquam eaque nihil exercitationem, deleniti officiis odit qui mollitia repudiandae magnam ipsum praesentium hic ex fugiat doloribus blanditiis eius rem beatae nulla. Ad odio accusantium facilis eius ipsam nemo saepe sint ut obcaecati debitis placeat accusamus repellendus ea, at harum, qui quos aliquam cumque veritatis veniam! Distinctio esse expedita neque molestiae possimus, excepturi perspiciatis maxime voluptate quam deserunt quidem incidunt illo minus suscipit dicta, vitae exercitationem necessitatibus eos atque laborum autem quis ipsa adipisci minima! Ab ea iure molestias consectetur officia repellat atque alias odit quia adipisci ad facere temporibus sapiente incidunt quod, officiis accusantium dolor asperiores est, vel praesentium maxime odio minus. Facere cupiditate hic in sit, quibusdam porro obcaecati, quisquam reprehenderit omnis sint officiis veniam corporis odit labore repudiandae minima soluta, tenetur possimus qui deserunt neque assumenda animi rem dolor. Exercitationem fugiat quas magni distinctio provident fuga ratione, doloremque earum quasi fugit! Voluptatem doloremque nihil sed soluta odit perferendis ad enim incidunt, facere debitis hic quasi in, animi doloribus deleniti, recusandae dolorum? Reprehenderit vitae quisquam nulla commodi optio minus error laborum, ratione deleniti alias illo beatae voluptatibus consequuntur non voluptate obcaecati earum sint aut magni corrupti quod libero corporis? Incidunt eum expedita qui, magni tempore cumque sunt ullam laborum eius soluta optio exercitationem minima quibusdam modi. Quidem itaque dolorum reprehenderit expedita porro! Iusto sunt maxime, praesentium incidunt magnam ipsum eius molestiae in facilis nihil illo odit ea placeat deserunt numquam exercitationem tempora id vero culpa impedit. Iure.
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis quo, aliquam error, soluta quidem commodi veniam nihil expedita odit libero ad possimus! Molestias, quibusdam voluptatum placeat corporis distinctio quaerat nemo libero ad sit tenetur. Illo deserunt quam dolorem libero dicta enim nam illum consectetur earum neque incidunt rem molestias, delectus dignissimos magni iusto tenetur laboriosam quos numquam assumenda veniam rerum. Veritatis nesciunt, ipsa dolor inventore et tenetur error! Placeat eveniet debitis atque modi soluta, laborum voluptatibus consequuntur odio molestias beatae unde facilis. Rem cupiditate neque quas at placeat? Animi labore quo doloribus sint blanditiis laudantium distinctio praesentium neque asperiores ea.
+   </p>
+
+</body>
+
+</html>

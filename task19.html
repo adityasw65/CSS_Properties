@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>2D transform in html</title>
+   <style>
+      body {
+         display: flex;
+         flex-wrap: wrap;
+         column-gap: 10px;
+      }
+      #card1 {
+         width: 100px;
+         height: 100px;
+         background-color: lightcoral;      
+         transition: all .2s 0s linear;
+      }
+      #card1:hover {
+         /* 
+            -  The translate() method moves an element from its current position (according to the parameters given for the X-axis and the Y-axis).
+            -  and we will give of translate in px or %  
+            -  x-axis +ve value will right side and -ve value left side 
+            -  y-axis +ve value will down side and -ve value upward side 
+         */
+
+         transform: translate(0px, -5px);
+         box-shadow: 0px 0px 15px 3px grey;
+      }
+
+
+
+      #card2 {
+         width: 100px;
+         height: 100px;
+         background-color: lightcoral;      
+         transition: all .4s 0s linear;
+      }
+      #card2:hover {
+         /* 
+            -  The rotate() method rotates an element clockwise or counter-clockwise according to a given degree.
+            -  there are two value x-axis and y-axis   
+            -  and give value in deg becuase it takes value in angle format
+         */
+         transform: rotateY(180deg);
+         /* transform: rotateX(180deg); */
+      }
+
+
+
+      #card3 {
+         width: 100px;
+         height: 100px;
+         background-color: lightcoral;      
+         transition: all .4s 0s linear;
+      }
+      #card3:hover {
+         /* 
+            -  The scale() method increases or decreases the size of an element (according to the parameters given for the width and height).
+            -  
+         */
+
+         /* 
+            transform: scaleY(3);
+            transform: scaleX(3); 
+            transform: scale(3, 3,);
+         */
+         transform: scale(3);
+
+      }
+
+
+
+      #card4 {
+         width: 100px;
+         height: 100px;
+         background-color: lightcoral;      
+         transition: all .4s 0s linear;
+      }
+      #card4:hover {
+
+         /* 
+            -  we have to values in deg because it takes value in angle format 
+            -  and this skew makes tilde the element accoding to value have we passed
+         */
+         /* transform: skewX(-30deg);
+         transform: skewY(-30deg); */
+         transform: skew(-30deg, -30deg);
+      }
+
+
+
+      #card5 {
+         width: 100px;
+         height: 100px;
+         background-color: lightcoral;      
+         transition: all .3s 0s linear;
+      }
+      #card5:hover {
+         /* 
+            -  The matrix() method combines all the 2D transform methods into one. 
+            -  matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
+            -  except rotate it takes all method in it
+         */
+
+         transform: matrix(1, -0.3, 0, 1, 0, 0);
+      }
+
+   </style>
+</head>
+
+<body>
+
+   <!-- 2D transformation in CSS  -->
+   <!-- 
+      translate()
+      rotate()
+      scaleX()
+      scaleY()
+      scale()
+      skewX()
+      skewY()
+      skew()
+      matrix() 
+   -->
+
+   <div id="card1">
+      <h2>translate</h2>
+   </div>
+
+   <div id="card2">
+      <h2>rotate</h2>
+   </div>
+
+   <div id="card3">
+      <h2>scale</h2>
+   </div>
+
+   <div id="card4">
+      <h2>skew</h2>
+   </div>
+
+   <div id="card5">
+      <h2>matrix</h2>
+   </div>
+</body>
+
+</html>

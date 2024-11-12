@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>3D transformation in CSS</title>
+   <style>
+      body {
+         display: flex;
+         flex-wrap: wrap;
+         column-gap: 10px;
+      }
+      #card1 {
+         width: 300px;
+         height: 300px;
+         background-color: lightseagreen;
+         transition: all .2s 0s linear;
+      }
+      #card1:hover {
+         transform: rotate(40deg);
+         /* it change the position or origin of element  */
+         transform-origin: 30% 40%;
+      }
+
+
+      #card2 {
+         width: 300px;
+         height: 300px;
+         background-color: lightcoral;
+         transition: all .2s 0s linear;
+      }
+      #card2:hover {
+         /* it just rotate on z-axis which is 3D move  */
+         transform: rotateZ(50deg);
+      }
+
+
+
+      #card3 {
+         width: 300px;
+         height: 300px;
+         background-color: rgb(151, 151, 151);
+         transition: all .3s 0s linear;
+      }
+      #card3:hover {
+         /* 
+            -  this is perspective is use to check how the view will look
+            -  the more you give less value the more it closer to view and the more you give high value the more long to view 
+         */
+         transform: perspective(150px) rotateX(50deg);
+         /* you can give multiple values on transform property in CSS  */
+      }
+   </style>
+</head>
+<body>
+
+   <!-- 3D transformation property in CSS  -->
+   
+   <div id="card1">
+      <h2>transform-origin</h2>
+   </div>
+
+   <div id="card2">
+      <h2>rotate</h2>
+   </div>
+
+   <div id="card3">
+      <h2>rotate</h2>
+   </div>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+#para1 {
+
+   /* you have to give margin from top */
+   /* margin-top: 10px; */
+   /* you have to give margin from right  */
+   /* margin-right: 50px; */
+   /* you have to give margin from bottom  */
+   /* margin-bottom: 10px; */
+   /* you have to give margin from left  */
+   /* margin-left: 50px; */
+
+   /* shorthand for margin  */
+   /* clockwise direction  */
+   /* margin: [top] [right] [bottom] [left]; */
+
+   /* again shorthand is  */
+   /* if you have to give three values and right and left are same values */
+   /* margin: [top] [right/left] [bottom]; */
+   /* margin: 10px 50px 10px; */
+
+   /* again one shorthand for margin is  */
+   /* here top and bottom, right and left have same values  */
+   /* margin: [top/bottom] [right/left]; */
+   /* margin: 10px 50px; */
+
+   /* one last shorthand for margin is  */
+   /* if your values are all same from top, right, bottom and left then use this  */
+   margin: 50px;
+
+   background: lightgrey;
+}
+#para2 {
+   background-color: violet;
+   /* padding values are all same  */
+   padding: 50px;
+}
+strong {
+   text-transform: uppercase;
+   font-family: cursive;
+}
+
+/* important note - apply same properties to padding as same as margin */
+

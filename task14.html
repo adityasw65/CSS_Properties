@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>media query in html</title>
+   <style>
+
+      /* syntax for media query :-- 
+
+         @media screen and (min-width: [value in px]) {
+            elements {
+               // css for it 
+            }
+         }
+
+         @media screen and (max-width: [value in px]) {
+            elements {
+               // css for it 
+            }
+         } */
+
+      .card {
+         width: 100%;
+         /* border: 2px solid black; */
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-evenly;
+         gap: 10px;
+      }
+
+      .card1 {
+         width: 100%;
+         background-color: lightgrey;
+         border-radius: 10px;
+      }
+
+      .card1 img {
+         width: 100%;
+         border-radius: 10px 10px 0px 0px;
+      }
+
+      .card1 p {
+         padding: 10px;
+      }
+
+      .card2 {
+         width: 100%;
+         background-color: lightgrey;
+         border-radius: 10px 10px 0px 0px;
+      }
+
+      .card2 img {
+         width: 100%;
+         border-radius: 10px 10px 0px 0px;
+      }
+
+      .card3 {
+         width: 100%;
+         background-color: lightgrey;
+         border-radius: 10px;
+      }
+
+      .card3 img {
+         width: 100%;
+         border-radius: 10px 10px 0px 0px;
+      }
+
+
+      /* here is media query used in html page  */
+
+      /* this min-width is used to apply css equal to 768px or above it  */
+      @media screen and (min-width: 768px) {
+
+         .card1 {
+            width: 45%;
+            background-color: rgb(251, 94, 94);
+         }
+
+         .card2 {
+            width: 45%;
+            background-color: rgb(251, 94, 94);
+         }
+
+         .card3 {
+            width: 45%;
+            background-color: rgb(251, 94, 94);
+         }
+
+         .card1 p {
+            padding: 10px;
+         }
+
+         .card2 p {
+            padding: 10px;
+         }
+
+         .card3 p {
+            padding: 10px;
+         }
+
+      }
+
+      /* this min-width is used to apply css equal to 1024px or above it  */
+      @media screen and (min-width: 1024px) {
+
+         .card1 {
+            width: 30%;
+            background-color: rgba(86, 252, 77, 0.82);
+         }
+
+         .card2 {
+            width: 30%;
+            background-color: rgba(86, 252, 77, 0.82);
+         }
+
+         .card3 {
+            width: 30%;
+            background-color: rgba(86, 252, 77, 0.82);
+         }
+
+         .card1 p {
+            padding: 10px;
+         }
+
+         .card2 p {
+            padding: 10px;
+         }
+
+         .card3 p {
+            padding: 10px;
+         }
+
+      }
+
+
+      /* we can use max-width also - that is equal to or below that value apply css  */
+   </style>
+</head>
+
+<body>
+
+   <!-- here we are learning about "media query"  -->
+   <!-- this property is veryful for creating webiste more resposive  -->
+   <!-- responsive concept in simple words ===> 
+            - when you see the website on desktop the view is good but that website you are seeing on the mobile then how it should look that defining the is called responsive.
+            - if desktop view is good but mobile view spoiled then it is not responsive website   
+   -->
+
+   <!-- here I have created three cards and make sure during creating website first create mobile view and then tablet and then desktop because this is very helpful during creating website  -->
+
+   <div class="card">
+      <div class="card1">
+         <img
+            src="https://images.unsplash.com/photo-1719937051058-63705ed35502?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxfHx8ZW58MHx8fHx8"
+            alt="not found">
+         <p>
+            <strong>Header 1</strong>
+            <p>
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis perferendis aut eos, praesentium labore
+               recusandae, inventore temporibus officiis quae blanditiis et itaque aliquam, perspiciatis incidunt
+               facilis
+               ut? Fugit, laboriosam quidem quaerat impedit recusandae ab odit quam explicabo obcaecati distinctio, hic
+               accusantium consequatur corporis quo officia aut sapiente. Illum excepturi voluptas nesciunt accusamus
+               qui
+               veniam expedita modi aperiam animi voluptates alias porro aliquam, suscipit ab voluptate ducimus
+            </p>
+         </p>
+      </div>
+      <div class="card2">
+         <img
+            src="https://images.unsplash.com/photo-1726809448984-2e7f60cc6e97?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5fHx8ZW58MHx8fHx8"
+            alt="not found">
+         <p>
+            <strong>Header 2</strong>
+            <p>
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis perferendis aut eos, praesentium labore
+               recusandae, inventore temporibus officiis quae blanditiis et itaque aliquam, perspiciatis incidunt
+               facilis
+               ut? Fugit, laboriosam quidem quaerat impedit recusandae ab odit quam explicabo obcaecati distinctio, hic
+               accusantium consequatur corporis quo officia aut sapiente. Illum excepturi voluptas nesciunt accusamus
+               qui
+               veniam expedita modi aperiam animi voluptates alias porro aliquam, suscipit ab voluptate ducimus
+            </p>
+         </p>
+      </div>
+      <div class="card3">
+         <img
+            src="https://images.unsplash.com/photo-1727130520402-fccb7f485f76?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2NXx8fGVufDB8fHx8fA%3D%3D"
+            alt="not found">
+         <p>
+            <strong>Header 3</strong>
+            <p>
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis perferendis aut eos, praesentium labore
+               recusandae, inventore temporibus officiis quae blanditiis et itaque aliquam, perspiciatis incidunt
+               facilis
+               ut? Fugit, laboriosam quidem quaerat impedit recusandae ab odit quam explicabo obcaecati distinctio, hic
+               accusantium consequatur corporis quo officia aut sapiente. Illum excepturi voluptas nesciunt accusamus
+               qui
+               veniam expedita modi aperiam animi voluptates alias porro aliquam, suscipit ab voluptate ducimus
+            </p>
+         </p>
+      </div>
+   </div>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>visibility, opacity and block in html</title>
+   <style>
+      .card1 {
+         background-color: lightblue;
+         /* this property remove the dimension of div tag  */
+         /* display: [block/none]; */
+         /* display: none; */
+      }
+
+      .card2 {
+         background-color: lightcoral;
+         /* this property just hide the div but not dimensions  */
+         /* visibility: [visibile/hidden/collapse]; */
+         /* visible for show the content 
+         hidden for hide the content 
+         collapse for remove the particular cell in table  */
+         /* two values: hidden and visible  */
+         visibility: visible;
+      }
+
+      .card3 {
+         background-color: lightgrey;
+         /* this property make div blurry  */
+         opacity: 0.5;
+      }
+
+      table {
+         /* margin-top: 30px; */
+         margin: 30px auto;
+      }
+      table #simAge {
+         /* this is how you can use collapse property  */
+         visibility: collapse;
+      }
+   </style>
+</head>
+
+<body>
+
+   <div class="card1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nihil, odio excepturi in eveniet quibusdam doloremque
+      minus laborum, vitae praesentium unde culpa perspiciatis explicabo! Quod labore harum eligendi, voluptatem
+      aspernatur cupiditate impedit molestias commodi eos sed esse libero atque distinctio!
+   </div>
+
+   <h2>visibility:visible</h2>
+   <div class="card2">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, tempora nostrum. Accusantium sint odit
+      nulla doloribus obcaecati itaque molestiae modi, nobis quo eligendi enim eveniet, quaerat repudiandae.
+      Perspiciatis quam adipisci consectetur tempore quae, exercitationem voluptatem ipsum ipsa laborum fugiat non!
+   </div>
+   <h2>opacity:0.5</h2>
+   <div class="card3">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, velit. Omnis odio incidunt adipisci nulla aliquam
+      culpa id eos velit minus quasi. In blanditiis recusandae corporis, quibusdam, adipisci ea possimus id, dolore
+      tempore placeat inventore nisi. Nisi dolor eveniet culpa?
+   </div>
+
+   <table border="2" cellspacing="0" cellpadding="10">
+      <thead>
+         <tr>
+            <th>Name</th>
+            <th>Age</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>Suresh</td>
+            <td>30</td>
+         </tr>
+         <tr>
+            <td>Simran</td>
+            <td id="simAge">39</td>
+         </tr>
+         <tr>
+            <td>Omkar</td>
+            <td>24</td>
+         </tr>
+         <tr>
+            <td>Vijay</td>
+            <td>23</td>
+         </tr>
+      </tbody>
+      <tfoot>
+         <tr>
+            <td colspan="2">copyright@2024</td>
+         </tr>
+      </tfoot>
+   </table>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>flex properties in html</title>
+   <style>
+      .cards {
+         border: 2px solid black;
+         display: flex;
+         flex-wrap: wrap;
+         height: 400px;
+
+         /* properties of flex  */
+         /* horizontal propeties  */
+         /* justify-content: [flex-start/ flex-end/ center/ stretch(default)/ space-around/ space-between/ space-evenly]; */
+
+         /* flex-start - for at left side
+         flex-end - for at right side 
+         center - for at center 
+         stretch - for stretch the div and this is by default 
+         space-around - for space around the divs with same size of space for each div 
+         space-between - for space between the divs 
+         space-evenly - for space between and around divs with proper size of space  */
+
+         /* justify-content: space-evenly; */
+
+         /* this property is also same but it apply on each div of parent and content property apply on entire content of parent  */
+
+         /* justify-items: [flex-start/ flex-end/ center/ stretch(default)/ baseline]; */
+         /* baseline - for if one div has font-size is large and other div has font-size is small but the where there baseline of character match at that line they align  */
+         
+      }
+      .card1 {
+         width: 300px;
+         height: 120px;
+         background-color: lightblue;
+      }
+      .card2 {
+         width: 300px;
+         height: 120px;
+         background-color: lightgray;
+      }
+      .card3 {
+         width: 300px;
+         height: 120px;
+         background-color: lightpink;
+      }
+   </style>
+</head>
+<body>
+
+   <!-- horizontal alignment in flex property  -->
+
+   <div class="cards">
+      <div class="card1">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, recusandae omnis reprehenderit natus, error magni ratione aspernatur facilis reiciendis nostrum id officiis ad. Enim, ab incidunt at id minima fugit.
+      </div>
+      <div class="card2">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo possimus repellat officia impedit eius, exercitationem totam? Atque praesentium dolore iusto odit deleniti, eligendi est odio. Officia excepturi facere dolore nihil?
+      </div>
+      <div class="card3">
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem nesciunt, molestiae adipisci enim fugiat similique, a soluta in ex veritatis consequuntur iusto saepe quisquam perspiciatis totam dolorum natus sunt itaque!
+      </div>
+   </div>
+</body>
+</html>

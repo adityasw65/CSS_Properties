@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>creating variable in html</title>
+   <style>
+      /* this is format first write :root and in that curly braces create variables  */
+      :root {
+         /* create variable */
+         /* format: --variableName: value; */
+         --textColor: blue;
+         --backColor: lightgoldenrodyellow;
+      }
+      p {
+         width: 400px;
+         height: 200px;
+
+         /* now call that variable - how? */
+         /* propertyname: var(variableName); */
+         color: var(--textColor);
+         background-color: var(--backColor);
+      }
+   </style>
+</head>
+<body>
+
+   <!-- now we are seeing the creating variable in css -->
+   <!-- why we use that this feature ==> 
+         suppose you are creating website and in that there particular with color code, so can't remeber all the time that color, sor just create variable give that color code values and save variable as your suitable calling time  -->
+
+   <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi laboriosam odio nisi error rerum modi tempore debitis. Officiis laboriosam at aut delectus. Aperiam hic molestiae itaque voluptas repudiandae? Nemo, molestias!
+   </p>
+</body>
+</html>

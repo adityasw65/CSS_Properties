@@ -1,0 +1,34 @@
+form {
+   margin: 50px 50px;
+}
+
+/* attribute selector  */
+/* now using only attribute selector  */
+input {
+   background-color: lightsteelblue;
+}
+
+/* select specific selector of input attribute  */
+input[type = "text"] {
+   color: navy;
+   font-size: 1rem;
+}
+
+/* attribute value end with  */
+input[type $= "il"] {
+   background-color: aquamarine;
+   color: chocolate;
+   font-size: 2rem;
+}
+
+/* attribute value start with  */
+input[type ^= "pass"] {
+   background-color: lightgoldenrodyellow;
+   color: red;
+   font-size: 1rem;
+}
+
+
+
+
+

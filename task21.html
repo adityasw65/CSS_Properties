@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>preserved-3d and backface-visibility in html</title>
+   <style>
+      #card {
+         width: 300px;
+         height: 300px;
+         border: 1px solid black;
+         /* background-color: lightgray; */
+         transform: rotateY(30deg);
+
+         /* this property preserve the 3d view  */
+         transform-style: preserve-3d;
+
+      }
+
+      #card1 {
+         width: 300px;
+         height: 300px;
+         background-color: lightcoral;
+         transition: all .4s 0s linear;
+      }
+
+      #card1:hover {
+         transform-origin: top left;
+         transform: rotateX(-35deg);
+         background-color: lightsalmon;
+      }
+
+
+      .profile {
+         width: 290px;
+         height: 340px;
+         /* border: 2px solid black; */
+         border-radius: 50%;
+         position: relative;
+      }
+
+      #front,
+      #back {
+         width: 100%;
+         height: 100%;
+         border-radius: 50%;
+         position: absolute;
+         top: 0;
+         left: 0;
+         border-radius: 50%;
+         transition: all .6s 0s linear;
+
+      }
+
+      #front {
+         /* backface-visibility: visible; */
+      }
+
+      #front img {
+         width: 100%;
+         height: 100%;
+         border-radius: 50%;
+         object-fit: 3/2;
+      }
+
+      #back {
+         background-color: black;
+         transform: rotateY(180deg);
+         backface-visibility: hidden;
+      }
+
+      #back .details {
+         text-align: center;
+         margin: 50px;
+         color: yellow;
+         font-size: 1.2rem;
+      }
+
+      /* main part this  */
+      .profile:hover #front {
+         transform: rotateY(180deg);
+         backface-visibility: hidden;
+      }
+
+      .profile:hover #back {
+         transform: rotateY(0deg);
+      }
+   </style>
+</head>
+
+<body>
+
+   <!-- preserve-3d property in CSS  -->
+
+   <div id="card">
+      <div id="card1">
+
+      </div>
+   </div>
+
+
+
+
+   <!-- 
+
+      -  The backface-visibility property defines whether or not the back face of an element should be visible when facing the user.
+      -  The back face of an element is a mirror image of the front face being displayed.
+      -  This property is useful when an element is rotated. It lets you choose if the user should see the back face or not. 
+
+      -  backface-visibility - simple meaning when see front view then user should not see back view
+      -  there are two values for backface-visibility: hidden and visible 
+   
+   -->
+
+   <!-- flip card  -->
+   <h1>Created one profile card</h1>
+   <div class="profile">
+      <div id="front">
+         <img src="Aditya.jpg" alt="image not found">
+      </div>
+      <div id="back">
+         <div class="details">
+            <u>
+               <h2>Profile Card</h2>
+            </u>
+            <p>Name: Aditya Waghmare</p>
+            <p>Gender: Male</p>
+            <p>Email id: adityasw65@gmail.com</p>
+         </div>
+      </div>
+   </div>
+
+
+   <!-- that's how we can use backface-visibility and preserve-3d property in css  -->
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+/* pseudo classes  */
+/* this is first child of .first class and first p tag  */
+.first p:first-child {
+   color: red;
+}
+
+/* this is last child of .first class and first p tag  */
+.first p:last-child {
+   color: blue;
+}
+
+/* you can apply css for child tag by particular selecting it  */
+.first p:nth-child(2) {
+   color: yellowgreen;
+}
+
+/* when you hover on any tag then  */
+.second input[type = "text"]:hover {
+   background-color: lightsteelblue;
+   color: yellow;
+}
+
+/* because it is empty that why it taking color  */
+.second input[type = "email"]:empty {
+   background-color: lightblue;
+}
+/* when you focus on it then it will change the color of email tag  */
+.second input[type = "email"]:focus {
+   background-color: lightyellow;
+   color: navy;
+}
+
+/* when you click on link then it will change the color for that moment  */
+.second a:active {
+   background-color: blanchedalmond;
+   color: teal;
+}
+
+/* checked values  */
+.third input:checked {
+   width: 20px;
+   height: 20px;
+}
+
+/* apply css for required field  */
+.third input[type = "text"]:required {
+   background-color: rgba(255, 0, 0, 0.607);
+}
+.third input[type = "text"]:focus {
+   background-color: lightblue;
+}
+
+/* disable field css  */
+input:disabled {
+   background-color: lightgray;
+}
+
+
+
+
+

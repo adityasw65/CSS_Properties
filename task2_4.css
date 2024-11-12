@@ -1,0 +1,19 @@
+/* pseudo elements  */
+/* ::before pseudo elements  */
+#para1:hover::before {
+   content: "Before the paragraph...";
+   font-size: 2rem;
+   color: blue;
+}
+/* ::after pseudo elements  */
+#para2:hover::after {
+   content: "End of the paragraph...";
+   font-size: 2rem;
+   color: red;
+}
+
+/* ::placeholder pseudo elements  */
+input:focus::placeholder {
+   font-size: 1.2rem;
+   color: cadetblue;
+}

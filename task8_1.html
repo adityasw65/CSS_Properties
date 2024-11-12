@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>display property in html</title>
+   <style>
+      .cards {
+         /* this property make block elements in inline elements and make in one row  */
+         /* display: inline-flex; */
+
+         /* but this property keep block elements as it is and make in one row  */
+         display: flex;
+
+         /* default property of flex */
+         /* flex-direction: row;  */
+
+         /* this is property for make block in columns  */
+         /* flex-direction: column; */
+
+         /* this property wrap the data if data is not fit in screen then one by one it take down that div - very helpful property */
+         /* flex-wrap: wrap; */
+
+         /* this will not wrap data in screen for fiting content  */
+         /* flex-wrap: nowrap; */
+
+         /* this will wrap data in reverse order like last middle first  */
+         /* flex-wrap: wrap-reverse; */
+
+         /* shorthand for flex-direction and flex-wrap  */
+         /* flex-flow: [row/column] [wrap/nowrap/wrap-reverse]; */
+         flex-flow: row wrap;
+
+      }
+      .card1 {
+         width: 300px;
+         height: 200px;
+         background-color: lightblue;
+      }
+      .card2 {
+         width: 300px;
+         height: 200px;
+         background-color: lightgray;
+      }
+      .card3 {
+         width: 300px;
+         height: 200px;
+         background-color: lightpink;
+      }
+   </style>
+</head>
+<body>
+
+   <!-- display flex properties  -->
+   <!-- this display flex property apply on parent div  -->
+
+   <div class="cards">
+      <div class="card1">
+         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque quae distinctio placeat similique impedit libero. Saepe dicta esse repellendus ad, sint quibusdam, ab, blanditiis aliquid ipsum at minus dolorum voluptatibus dolores alias fuga. Minima in facere nisi reprehenderit non rem itaque quisquam tenetur sunt vero eos illum eum quam molestias cumque
+      </div>
+      <div class="card2">
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio ipsum quos sint dolor asperiores deleniti, quia itaque dolorum doloremque laborum! Voluptatibus, repellat ut, corporis iure itaque quibusdam neque recusandae ab quasi hic, consectetur accusamus a consequuntur soluta. Eius quasi hic corrupti at atque consequatur iusto aspernatur maiores perspiciatis ab veniam,
+      </div>
+      <div class="card3">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero recusandae numquam aspernatur fugiat laboriosam itaque tempora tempore cupiditate earum nihil odit culpa id, iure blanditiis mollitia repudiandae laborum quidem nulla, quis nesciunt obcaecati aliquam harum aperiam assumenda. Quod illo tempora expedita repellendus a quidem praesentium aliquam natus? Eum
+      </div>
+   </div>
+</body>
+</html>
